@@ -4,7 +4,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: visible;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 
 #logo div {
     margin-left: 15px;
-    font-size: 24px;
+
 }
 
 #logo img {
@@ -28,14 +28,30 @@ header {
     height: auto;
 }
 
+.lang {
+    margin-right: 3%;
+}
+
 .langbox {
-    border: 1px solid black;
-    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4px;
+    margin-right: 13px;
+    transition: all .2s ease-in-out;
+
+}
+
+.lang span:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
 }
 
 nav {
-    width: 100%;
-    padding: 5px;
+    position: sticky;
+    top: 0;
+    padding: 10px;
     background-color: black;
     color: rgb(255, 255, 255);
 }
@@ -68,20 +84,29 @@ nav ul li:hover {
 
 .search {
     padding: 10px;
+    margin-top: 1%;
+
 }
 
 .search input {
-    border-radius: 4px;
-    padding: 10px;
+    border-radius: 3.5px;
+    padding: 6px;
     margin-right: 10px;
+    border: 1.82px solid black;
+    width: 20vw;
+}
+
+.search i:hover {
+    transition: all .1s ease-out;
+    cursor: pointer;
+    transform: scale(1.12);
+
 }
 
 .banner {
-
-    padding: 10px;
+    margin-bottom: 10px;
     width: 100%;
-    height: 60vh;
-
+    height: 72.4vh
 }
 
 h3 {
@@ -90,6 +115,8 @@ h3 {
     border-radius: 5px;
     color: aliceblue;
     margin: 10px;
+    padding: 6px;
+    text-align: center;
 }
 
 .rightbanner {
@@ -106,20 +133,30 @@ h3 {
 
 #topstory p {
     font-size: 20px;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 0px;
+}
+
+#topstory img {
+    margin-top: 10px;
+    border-radius: 9px;
+    height: 300px;
 }
 
 button {
-    padding: 10px;
+    padding: 8px 20px;
     font-size: 20px;
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 button:first-child {
-    margin-left: 40%;
-    margin-right: 10%;
+    margin-left: 67.5%;
+
     margin-bottom: 3%;
+}
+
+.rightbanner {
+    margin-left: 10px;
 }
 
 footer {
